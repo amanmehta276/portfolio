@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" data-mode="cse">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Aman Mehta is an Electrical and Electronics Engineering student building power systems, embedded hardware, software products, and AI tools.">
+<title>Aman Mehta | Electrical Engineer and Full-Stack Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="aman.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="logo" href="#home">Vyom</a>
+    <nav id="nav">
+      <a href="#about">About</a><a href="#work">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="resume-link" id="resumeLink" href="Aman Mehta Resume.pdf" download>Resume</a>
+    <div class="seg mini" role="group" aria-label="Choose mode">
+      <button data-set="eee" aria-pressed="true">EEE</button>
+      <button data-set="cse" aria-pressed="false">CSE</button>
+    </div>
+    <button id="menu" aria-expanded="false" aria-controls="nav">Menu</button>
+  </div>
+</header>
+
+<main id="home">
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Electrical &amp; Electronics Engineer</p>
+        <h1>Aman Mehta</h1>
+        <p class="role">Builds <b id="typed"></b><span class="caret"></span></p>
+        <p class="lede" id="lede"></p>
+        <a class="resume-button" id="resumeButton" href="Aman Mehta Resume.pdf" download>Download resume</a>
+      </div>
+      <div class="hero-photo">
+        <img src="vyom12.jpeg" alt="Aman Mehta in formal attire">
+      </div>
+    </div>
+
+    <p class="pick">Choose EEE or CSE here, or open Python mode from Skills.</p>
+    <div class="seg big" role="group" aria-label="Choose mode">
+      <button data-set="eee" aria-pressed="true"><b>EEE mode</b><span>Inverters, power quality, substations</span></button>
+      <button data-set="cse" aria-pressed="false"><b>CSE mode</b><span>Web apps, platforms, AI tools</span></button>
+    </div>
+
+    <div class="panel" id="scope">
+      <div class="phead">Grid current, live. Drag the slider to add harmonics.</div>
+      <canvas id="wave" width="1000" height="220" aria-label="Animated grid current waveform"></canvas>
+      <div class="ctrl">
+        <label for="dist">Distortion</label>
+        <input id="dist" type="range" min="1.34" max="30" step="0.01" value="26.45">
+        <strong id="thd">26.45%</strong>
+        <button id="bad" type="button">Add distortion</button>
+        <button id="fix" type="button" class="on">Apply PV-STATCOM</button>
+      </div>
+    </div>
+
+    <div class="panel term" id="term" hidden>
+      <div class="phead">vyom@portfolio, a tiny terminal you can type into</div>
+      <div id="tout" role="log" aria-live="polite"></div>
+      <form id="tf"><span class="ps">$</span><input id="tin" aria-label="Terminal command" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="type help"></form>
+      <div class="ctrl"><button type="button" data-cmd="help">help</button><button type="button" data-cmd="projects">projects</button><button type="button" data-cmd="skills">skills</button><button type="button" data-cmd="contact">contact</button><button type="button" data-cmd="mode eee">mode eee</button></div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap"><div class="stats" id="stats"></div></div>
+
+<section id="about">
+  <div class="wrap about">
+    <div class="rv">
+      <h2>About</h2>
+      <p>I'm a final-year Electrical and Electronics Engineering student at CGIT Raipur working across power electronics, power quality, embedded systems and full-stack development. On one side: boost converters, SPWM H-bridges, THD and IEEE-519. On the other: React, Node.js, FastAPI and shipping products to real users.</p>
+      <p>I run VyomsTech, a solo studio that has delivered a substation management site for CSPDCL, managed a client's full web stack, and built a browser-based PCB designer. I'm targeting a Graduate Engineer Trainee (Electrical) role while continuing to build software products.</p>
+    </div>
+    <dl class="facts rv">
+      <div><dt>Based in</dt><dd>Raipur, Chhattisgarh</dd></div>
+      <div><dt>Studying</dt><dd>B.Tech EEE, 2023 to 2027</dd></div>
+      <div><dt>Studio</dt><dd>VyomsTech</dd></div>
+      <div><dt>Looking for</dt><dd>Electrical or software roles</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <h2 class="rv">Experience</h2>
+    <p class="sub rv">Freelance and client work under VyomsTech.</p>
+    <div class="job rv">
+      <h3>Founder &amp; Full-Stack Developer, VyomsTech</h3>
+      <p class="when">2025 to present</p>
+      <ul>
+        <li>Delivered the frontend of a Substation Management website for CSPDCL's Nawapara Rajim 33/11 kV substation: fully responsive, with image fallbacks and a pinch-zoom single-line diagram.</li>
+        <li>Manage the full website and tech stack for Ghosh Global Services (hosting, SEO and email), and built them a PDF rebranding tool with PyMuPDF.</li>
+        <li>Built Sangam, a student and alumni networking platform for CGIT, with OTP roll-number login, JWT auth, jobs board, chat and an admin panel.</li>
+      </ul>
+    </div>
+    <div class="job rv">
+      <h3>Vocational Training, CSPDCL</h3>
+      <p class="when">July 2025 and July 2026</p>
+      <ul><li>Completed two training terms in electrical engineering and power systems at a 33/11 kV substation.</li></ul>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <h2 class="rv">Projects</h2>
+    <p class="sub rv" id="projSub"></p>
+    <div class="grid" id="proj"></div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <h2 class="rv">Skills</h2>
+    <p class="sub rv" id="skillSub"></p>
+    <div class="python-mode">
+      <span>Want to explore my Python work?</span>
+      <button type="button" data-set="python" aria-pressed="false">Python mode</button>
+    </div>
+    <dl class="skills" id="skillsList"></dl>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap cols">
+    <div class="edu rv">
+      <h3>Education</h3>
+      <p><b>Chhattisgarh Institute of Technology, Raipur</b><br>B.Tech in Electrical &amp; Electronics Engineering, 2023 to 2027</p>
+      <p><b>Sarswati Shishu Vidya Mandir, Nawapara</b><br>12th Science (PCM): 87.4%. 10th: 95.3%</p>
+    </div>
+    <div class="rv">
+      <h3>Certifications</h3>
+      <ul>
+        <li><b>CSPDCL</b> Vocational Training, Electrical Engineering &amp; Power Systems (Jul 2025 and Jul 2026)</li>
+        <li><b>GeeksforGeeks</b> 160 Days of DSA with Python (Aug 2025)</li>
+        <li><b>PhysicsWallah</b> Decode DSA with Python (Aug 2025)</li>
+        <li><b>Cisco Networking Academy</b> Data Science Essentials (Dec 2025)</li>
+        <li><b>PhysicsWallah</b> Cloud Computing</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap rv">
+    <h2>Let's work together</h2>
+    <p class="sub">Hiring for an EEE or software role, or need a website built? Email me.</p>
+    <a class="mail" href="mailto:amankrmehta02@gmail.com">amankrmehta02@gmail.com</a>
+    <div class="links">
+      <a href="https://github.com/amanmehta276">GitHub</a>
+      <a href="https://www.linkedin.com/in/aman-mehta-782334281/">LinkedIn</a>
+      <a href="https://vyomstech.netlify.app">VyomsTech</a>
+      <a href="https://www.youtube.com/@snaptoon276">YouTube</a>
+      <a href="https://www.instagram.com/world_of_snap_/">Instagram</a>
+      <a id="resumeContactLink" href="Aman Mehta Resume.pdf" download>Download CV</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap"><span>&copy; 2026 Aman Mehta</span><a href="#home">Back to top</a></div></footer>
+<script src="aman.js"></script>
+</body>
+</html>
