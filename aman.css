@@ -534,7 +534,7 @@ h2 {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 290px), 1fr));
   gap: 18px;
   align-items: start;
 }
@@ -915,7 +915,18 @@ footer a {
   .hero { padding-top: calc(86px + 24px); }
   .stats { grid-template-columns: 1fr; }
   .skills > div { grid-template-columns: 1fr; }
-  .seg.mini { width: fit-content; }
+  header .wrap {
+    gap: 8px;
+    padding: 0 16px;
+  }
+  .resume-link { display: none; }
+  .seg.mini {
+    width: fit-content;
+    gap: 3px;
+    padding: 3px;
+  }
+  .seg.mini button { padding: 7px 9px; }
+  #menu { padding: 7px 10px; }
   .ctrl { align-items: flex-start; }
   .mail { font-size: clamp(1.3rem, 7vw, 2.2rem); }
 }
